@@ -64,7 +64,7 @@ function Home() {
           <Alert variant="success" className="mt-3">
             Short URL:{" "}
             <a href={`https://custom-url-shortner-1.onrender.com/#/link/${shortUrl}`} target="_blank" rel="noopener noreferrer">
-            https://custom-url-shortner-1.onrender.com/link/{shortUrl}
+            https://custom-url-shortner-1.onrender.com/#/link/{shortUrl}
             </a>
         </Alert>        
         )}
