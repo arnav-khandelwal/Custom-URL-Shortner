@@ -12,7 +12,7 @@ const PORT = 8001;
 connectToMongoDB(process.env.MONGO_URI).then(() => console.log(`Connected to MongoDB Atlas!`));
 
 app.use(cors({
-    origin: "http://localhost:5173",  
+    origin: "https://custom-url-shortner-1.onrender.com/",  
     methods: ["GET", "POST"],         
     credentials: true                 
 }));
