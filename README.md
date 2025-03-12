@@ -1,7 +1,7 @@
 # 🚀 Custom URL Shortener  
 
 A **full-stack** URL shortener web application that lets users **shorten URLs, track analytics, and manage links** efficiently. Built for simplicity, speed, and reliability.  
-https://custom-url-shortner-1.onrender.com/  
+https://custom-url-shortner-1.onrender.com/
 
 ---
 
@@ -73,3 +73,10 @@ Ensure you have the following installed:
    ```
 
 ---
+
+### 🎯 Contribute & Support  
+💡 Found a bug? Have an idea? Feel free to open an **issue** or create a **pull request**!  
+⭐ If you like this project, **give it a star** on GitHub!  
+
+---
+
