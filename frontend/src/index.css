@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #646cff;
+  --secondary-color: #535bf2;
+  --bg-light: #dbdbdb;
+  --bg-dark: #4d4b4b;
+  --text-light: #213547;
+  --text-dark: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+.form-control {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dark-mode .form-control {
+  background-color: #8e8282;
+  border-color: #444;
+  color: var(--text-dark);
+}
+
+.dark-mode .form-control:focus {
+  background-color: #7c7575;
+  border-color: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.dark-mode .url-form{
+    background-color: rgb(34, 37, 41);
+}
+
+.url-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgb(235, 232, 232);
+}
+
+.url-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

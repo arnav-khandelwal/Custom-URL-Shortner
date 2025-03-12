@@ -16,8 +16,18 @@ async function generateNewUrl(req, res){
 
 async function getAnalytics(req, res){
     const shortId = req.params.shortId;
+    if(shortId === "all"){
+        const result = await URL.find({});
+        return res.json(result);
+    }
     const result = await URL.findOne({shortId});
-    return res.json({totalClicks: result.visitHistory.length, analytics: result.visitHistory});
+    return res.json({
+        shortId: result.shortId,
+        redirectUrl: result.redirectUrl,
+        totalClicks: result.visitHistory.length,
+        createdAt: result.createdAt
+    });
+    
 }
 
 export {
