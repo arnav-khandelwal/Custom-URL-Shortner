@@ -1,92 +1,65 @@
-# URL Shortener
+# Custom URL Shortener
 
-A simple URL shortener built using Node.js, Express, MongoDB, and NanoID.
+A full-stack URL shortener web application that allows users to shorten URLs, track analytics, and manage links efficiently.
 
 ## Features
-- Generate short URLs
-- Redirect short URLs to original URLs
-- Track analytics (total clicks and visit history)
+- Shorten long URLs into compact, shareable links
+- Track analytics such as click count and usage statistics
+- User-friendly interface with a modern design
+- Backend built with Express.js and MongoDB
+- Frontend developed using React.js
+- Deployed using Render
 
-## Technologies Used
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- NanoID
+## Tech Stack
+- **Frontend**: React.js, React Router, Tailwind CSS
+- **Backend**: Node.js, Express.js, MongoDB (Mongoose ODM)
+- **Database**: MongoDB Atlas
+- **Deployment**: Render
 
 ## Installation
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
+Make sure you have the following installed on your machine:
+- Node.js & npm (or Yarn)
+- MongoDB (local or Atlas)
 
-### Steps
+### Backend Setup
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/url-shortener.git
-   cd url-shortener
+   ```bash
+   git clone https://github.com/your-repo/custom-url-shortener.git
+   cd custom-url-shortener/backend
    ```
 2. Install dependencies:
-   ```sh
-   npm install
+   ```bash
+   yarn install
    ```
-3. Start MongoDB (if not running already):
-   ```sh
-   mongod
+3. Set up environment variables in a `.env` file:
+   ```env
+   MONGO_URI=your_mongodb_connection_string
+   PORT=8001
    ```
-4. Start the server:
-   ```sh
-   npm start
+4. Start the backend server:
+   ```bash
+   yarn start
    ```
-   The server runs on `http://localhost:8001`.
 
-## API Endpoints
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd ../frontend
+   ```
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+3. Start the frontend development server:
+   ```bash
+   yarn dev
+   ```
+   
+## License
+This project is open-source and available under the MIT License.
 
-### 1. Generate a Short URL
-**Endpoint:** `POST /url`
+---
+Let me know if you want to add more details or modifications!
 
-**Request Body:**
-```json
-{
-  "url": "https://example.com"
-}
-```
-
-**Response:**
-```json
-{
-  "id": "abcdefgh"
-}
-```
-
-### 2. Redirect to Original URL
-**Endpoint:** `GET /:shortId`
-
-Redirects to the original URL.
-
-### 3. Get URL Analytics
-**Endpoint:** `GET /url/analytics/:shortId`
-
-**Response:**
-```json
-{
-  "totalClicks": 5,
-  "analytics": [
-    { "timeStamp": 1710457890000 },
-    { "timeStamp": 1710457900000 }
-  ]
-}
-```
-
-## Project Structure
-```
-.
-├── controllers/
-│   ├── url.js
-├── models/
-│   ├── url.js
-├── routes/
-│   ├── url.js
-├── index.js
-├── connection.js
-├── package.json
-```
