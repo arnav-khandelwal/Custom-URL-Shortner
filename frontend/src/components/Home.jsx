@@ -63,8 +63,8 @@ function Home() {
         {shortUrl && (
           <Alert variant="success" className="mt-3">
             Short URL:{" "}
-            <a href={`http://localhost:5173/link/${shortUrl}`} target="_blank" rel="noopener noreferrer">
-                http://localhost:5173/link/{shortUrl}
+            <a href={`https://custom-url-shortner-1.onrender.com/#/link/${shortUrl}`} target="_blank" rel="noopener noreferrer">
+            https://custom-url-shortner-1.onrender.com/link/{shortUrl}
             </a>
         </Alert>        
         )}

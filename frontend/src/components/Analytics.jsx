@@ -78,7 +78,7 @@ function Analytics() {
           <tbody>
             <tr>
             <td>
-                <a href={`http://localhost:5173/link/${urls.shortId}`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://custom-url-shortner-1.onrender.com/#/link/${urls.shortId}`} target="_blank" rel="noopener noreferrer">
                   {urls.shortId}
                 </a>
               </td>

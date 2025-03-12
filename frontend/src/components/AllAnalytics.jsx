@@ -57,7 +57,7 @@ function AllAnalytics() {
           {urls.map((url) => (
             <tr key={url.shortId}>
               <td>
-                <a href={`http://localhost:5173/link/${url.shortId}`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://custom-url-shortner-1.onrender.com/#/link/${url.shortId}`} target="_blank" rel="noopener noreferrer">
                   {url.shortId}
                 </a>
               </td>
