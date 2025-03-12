@@ -25,7 +25,8 @@ async function getAnalytics(req, res){
         shortId: result.shortId,
         redirectUrl: result.redirectUrl,
         totalClicks: result.visitHistory.length,
-        createdAt: result.createdAt
+        createdAt: result.createdAt,
+        visitHistory: result.visitHistory
     });
     
 }
