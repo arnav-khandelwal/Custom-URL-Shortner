@@ -16,7 +16,7 @@ function Home() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8001/api/url', { url });
+      const response = await axios.post('https://custom-url-shortner-gmvf.onrender.com/api/url', { url });
       setShortUrl(response.data.id);
     } catch (err) {
       setError('Failed to shorten URL. Please try again.');

@@ -15,7 +15,7 @@ function Analytics() {
     setUrls(null);
     
     try {
-      const response = await axios.get(`http://localhost:8001/api/url/analytics/${inputValue}`);
+      const response = await axios.get(`https://custom-url-shortner-gmvf.onrender.com/api/url/analytics/${inputValue}`);
       setUrls(response.data);
     } catch (err) {
       setError('Invalid short URL ID or no data available');

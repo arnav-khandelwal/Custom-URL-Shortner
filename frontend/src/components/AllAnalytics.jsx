@@ -14,7 +14,7 @@ function AllAnalytics() {
 
   const fetchAnalytics = async () => {
     try {
-      const response = await axios.get('http://localhost:8001/api/url/analytics/all');
+      const response = await axios.get('https://custom-url-shortner-gmvf.onrender.com/api/url/analytics/all');
       setUrls(response.data);
     } catch (err) {
       setError('Failed to fetch analytics data');
