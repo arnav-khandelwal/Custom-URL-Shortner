@@ -1,65 +1,75 @@
-# Custom URL Shortener
+# 🚀 Custom URL Shortener  
 
-A full-stack URL shortener web application that allows users to shorten URLs, track analytics, and manage links efficiently.
+A **full-stack** URL shortener web application that lets users **shorten URLs, track analytics, and manage links** efficiently. Built for simplicity, speed, and reliability.  
+https://custom-url-shortner-1.onrender.com/  
 
-## Features
-- Shorten long URLs into compact, shareable links
-- Track analytics such as click count and usage statistics
-- User-friendly interface with a modern design
-- Backend built with Express.js and MongoDB
-- Frontend developed using React.js
-- Deployed using Render
+---
 
-## Tech Stack
-- **Frontend**: React.js, React Router, Tailwind CSS
-- **Backend**: Node.js, Express.js, MongoDB (Mongoose ODM)
-- **Database**: MongoDB Atlas
-- **Deployment**: Render
+## 🌟 Features  
+✅ **Shorten URLs** – Convert long links into compact, shareable URLs  
+📊 **Analytics Tracking** – View the number of clicks and detailed visit history  
+🖥 **Modern UI** – Clean and user-friendly interface with smooth navigation  
+⚡ **Fast & Scalable** – Built using the MERN stack with optimized performance  
+☁ **Deployed on Render** – Available online, no need for local setup  
 
-## Installation
+---
 
-### Prerequisites
-Make sure you have the following installed on your machine:
-- Node.js & npm (or Yarn)
-- MongoDB (local or Atlas)
+## 🛠 Tech Stack  
 
-### Backend Setup
-1. Clone the repository:
+### **Frontend**  
+🟢 React.js (with React Router)  
+
+### **Backend**  
+🟢 Node.js & Express.js (REST API)  
+🟢 MongoDB (Mongoose ODM)  
+
+### **Database**  
+🟢 MongoDB Atlas (Cloud Database)  
+
+### **Deployment**  
+🚀 Render (for both frontend & backend)  
+
+---
+
+## 🚀 Getting Started  
+
+### **Prerequisites**  
+Ensure you have the following installed:  
+- 📌 **[Node.js](https://nodejs.org/)** & npm (or Yarn)  
+- 📌 **[MongoDB](https://www.mongodb.com/)** (local or MongoDB Atlas)  
+
+### **Backend Setup**  
+1️⃣ Clone the repository:  
    ```bash
    git clone https://github.com/your-repo/custom-url-shortener.git
    cd custom-url-shortener/backend
    ```
-2. Install dependencies:
+2️⃣ Install dependencies:  
    ```bash
-   yarn install
+   yarn install  # or npm install
    ```
-3. Set up environment variables in a `.env` file:
+3️⃣ Create a `.env` file in the backend folder and add:  
    ```env
    MONGO_URI=your_mongodb_connection_string
    PORT=8001
    ```
-4. Start the backend server:
+4️⃣ Start the backend server:  
    ```bash
-   yarn start
+   yarn start  # or npm start
    ```
 
-### Frontend Setup
-1. Navigate to the frontend directory:
+### **Frontend Setup**  
+1️⃣ Navigate to the frontend directory:  
    ```bash
    cd ../frontend
    ```
-2. Install dependencies:
+2️⃣ Install dependencies:  
    ```bash
-   yarn install
+   yarn install  # or npm install
    ```
-3. Start the frontend development server:
+3️⃣ Start the frontend development server:  
    ```bash
-   yarn dev
+   yarn dev  # or npm start
    ```
-   
-## License
-This project is open-source and available under the MIT License.
 
 ---
-Let me know if you want to add more details or modifications!
-
